@@ -2,12 +2,18 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>HQ Star Wars - Biblioteca Master</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Cores do Sistema para Mobile -->
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-navbutton-color" content="#050508">
 </head>
 <body>
+  <canvas id="starfield"></canvas>
+  <div class="bg-overlay"></div>
   <div id="app"></div>
 
   <!-- Bibliotecas PDF.js (para leitura dos livros locais) -->
@@ -22,6 +28,9 @@
 
   <!-- Mapeamento Google Drive (substitua os IDs!) -->
   <script src="data/gdrive-mapping.js"></script>
+
+  <!-- Animação Background -->
+  <script src="js/stars.js"></script>
 
   <!-- App Lógica -->
   <script src="js/app.js"></script>
